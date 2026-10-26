@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/mariam/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -DUIN_VERSION=\\\"0.1.0\\\" -I/home/mariam/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/uincampus_core.dir/src/version.cpp.o -c /home/mariam/uin-campus/src/version.cpp",
+  "file": "/home/mariam/uin-campus/src/version.cpp",
+  "output": "/home/mariam/uin-campus/build/debug/CMakeFiles/uincampus_core.dir/src/version.cpp.o"
+},
+{
+  "directory": "/home/mariam/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -I/home/mariam/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/uin-campus.dir/app/main.cpp.o -c /home/mariam/uin-campus/app/main.cpp",
+  "file": "/home/mariam/uin-campus/app/main.cpp",
+  "output": "/home/mariam/uin-campus/build/debug/CMakeFiles/uin-campus.dir/app/main.cpp.o"
+}
+]
