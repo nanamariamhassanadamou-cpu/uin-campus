@@ -3,19 +3,20 @@
 #include <cassert>
 #include <cmath>
 #include <numeric>
+#include <span>
 
 namespace uin {
 
-double somme(const std::vector<double>& valeurs) {
+double somme(std::span<const double> valeurs) {
     return std::accumulate(valeurs.begin(), valeurs.end(), 0.0);
 }
 
-double moyenne(const std::vector<double>& notes) {
+double moyenne(std::span<const double> notes) {
     assert(!notes.empty() && "moyenne(): aucune note");
     return somme(notes) / static_cast<double>(notes.size());
 }
 
-double moyenne(const std::vector<double>& notes, const std::vector<double>& coefficients) {
+double moyenne(std::span<const double> notes, std::span<const double> coefficients) {
     assert(!notes.empty() && "moyenne(): aucune note");
     assert(notes.size() == coefficients.size() && "moyenne(): tailles différentes");
     const double sommeCoefficients = somme(coefficients);
@@ -25,7 +26,7 @@ double moyenne(const std::vector<double>& notes, const std::vector<double>& coef
     return sommePonderee / sommeCoefficients;
 }
 
-Statistiques calculerStatistiques(const std::vector<double>& notes) {
+Statistiques calculerStatistiques(std::span<const double> notes) {
     assert(!notes.empty() && "calculerStatistiques(): aucune note");
     const auto [mini, maxi] = std::ranges::minmax(notes);
     const double moy = moyenne(notes);
@@ -40,7 +41,7 @@ Statistiques calculerStatistiques(const std::vector<double>& notes) {
     };
 }
 
-int compterValidees(const std::vector<double>& notes, double seuil) {
+int compterValidees(std::span<const double> notes, double seuil) {
     return static_cast<int>(
         std::ranges::count_if(notes, [seuil](double n) { return n >= seuil; }));
 }
