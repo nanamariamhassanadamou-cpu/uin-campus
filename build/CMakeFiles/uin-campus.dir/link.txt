@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/uin-campus.dir/link.d "CMakeFiles/uin-campus.dir/app/main.cpp.o" -o uin-campus  libuincampus_core.a

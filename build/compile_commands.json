@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/mariam/uin-campus/build",
+  "command": "/usr/bin/c++ -DUIN_VERSION=\\\"0.1.0\\\" -I/home/mariam/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -o CMakeFiles/uincampus_core.dir/src/version.cpp.o -c /home/mariam/uin-campus/src/version.cpp",
+  "file": "/home/mariam/uin-campus/src/version.cpp",
+  "output": "CMakeFiles/uincampus_core.dir/src/version.cpp.o"
+},
+{
+  "directory": "/home/mariam/uin-campus/build",
+  "command": "/usr/bin/c++ -DUIN_VERSION=\\\"0.1.0\\\" -I/home/mariam/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -o CMakeFiles/uincampus_core.dir/src/regles.cpp.o -c /home/mariam/uin-campus/src/regles.cpp",
+  "file": "/home/mariam/uin-campus/src/regles.cpp",
+  "output": "CMakeFiles/uincampus_core.dir/src/regles.cpp.o"
+},
+{
+  "directory": "/home/mariam/uin-campus/build",
+  "command": "/usr/bin/c++ -DUIN_VERSION=\\\"0.1.0\\\" -I/home/mariam/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -o CMakeFiles/uincampus_core.dir/src/saisie.cpp.o -c /home/mariam/uin-campus/src/saisie.cpp",
+  "file": "/home/mariam/uin-campus/src/saisie.cpp",
+  "output": "CMakeFiles/uincampus_core.dir/src/saisie.cpp.o"
+},
+{
+  "directory": "/home/mariam/uin-campus/build",
+  "command": "/usr/bin/c++  -I/home/mariam/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -o CMakeFiles/uin-campus.dir/app/main.cpp.o -c /home/mariam/uin-campus/app/main.cpp",
+  "file": "/home/mariam/uin-campus/app/main.cpp",
+  "output": "CMakeFiles/uin-campus.dir/app/main.cpp.o"
+}
+]
